@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack serve --hot --mode development",
+    "clean": "rm public/js/bundle.js",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
