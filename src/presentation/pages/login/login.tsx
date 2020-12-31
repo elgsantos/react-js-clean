@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import Styles from './login-styles.scss'
 import { Footer, Input, LoginHeader, FormStatus } from '@/presentation/components'
-import Context from '@/presentation/components/contexts/form/form-context'
+import Context from '@/presentation/contexts/form/form-context'
 import { Validation } from '@/presentation/protocols/validation'
 import { Authentication } from '@/domain/usecases'
 
