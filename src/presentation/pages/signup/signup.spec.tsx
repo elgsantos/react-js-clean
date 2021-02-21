@@ -5,7 +5,7 @@ import { createMemoryHistory } from 'history'
 import { RenderResult, render, cleanup, fireEvent, waitFor } from '@testing-library/react'
 import SignUp from './signup'
 import { AddAccountSpy, Helper, SaveAccessTokenMock, ValidationStub } from '@/presentation/test'
-import { EmailInUseError, InvalidCredentialsError } from '@/domain/errors'
+import { EmailInUseError } from '@/domain/errors'
 
 type SutTypes = {
   sut: RenderResult
